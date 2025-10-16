@@ -55,11 +55,27 @@ s2 = "Hello Monty Python!"
 s2.split(' ') #split the string at space
 s2.split(' ')[1] #gives second word of the string
 s2.split('o') #gives list of strings split at 'o'
+
 print('Hello \n world!') #\n is new line character
 print('Hello \\n world!') #\\n is printed as it is
+
 'Monty' + 'Python' #string concatenation
 ' '.join(['Monty', 'Python']) #join the list of strings with '' as separator 
 '+'.join(['Monty', 'Python']) #join the list of strings with '+' as separator 
+
 print("hello", a) #print hello and value of a
 print("The outcome of interest is", a) #print the outcome of interest is 3
-print("The outcome of interest is %f", a) #print the outcome of interest is 3.000000  
+
+print("The outcome of interest is %f", a) #print the outcome of interest is 3.000000
+print ('Hello, my name is %s and I am %d years old.' % ('John', 23)) #string formatting
+#%s is for string, %d is for integer, %f is for float
+
+name = 'Anastasiya'
+session_number = 9
+print('My name is {name} and I am attending today\'s session {session_number}'.format(name=name, session_number=session_number)) #string formatting
+#Extra:  \ is used to escape special characters like ' in today's
+print('{} divided by {} is {}.'.format(2000, 1500, 2000/1500)) #string formatting)
+print('{:,d} divided by {:,.0f} is {:,.2f}.'.format(2000, 1500, 2000/1500)) #string formatting with precision
+print(type(a).__name__) #gives the type of variable a as string
+
+#
