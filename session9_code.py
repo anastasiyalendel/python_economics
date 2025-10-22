@@ -39,6 +39,8 @@ not False #gives True
 x=2
 y=3
 z=3
+
+
 z==y #True, because z is equal to y, z=y assignment operator so be careful
 y is z #True, because both are pointing to same object in memory
 
@@ -78,4 +80,8 @@ print('{} divided by {} is {}.'.format(2000, 1500, 2000/1500)) #string formattin
 print('{:,d} divided by {:,.0f} is {:,.2f}.'.format(2000, 1500, 2000/1500)) #string formatting with precision
 print(type(a).__name__) #gives the type of variable a as string
 
-#
+import math
+print(math.pi)
+import numpy as np
+print(np.pi)
+import matplotlib.pyplot as plt
